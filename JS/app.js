@@ -62,7 +62,11 @@ function showDate() {
 }
 
 search_input.addEventListener('keypress' , (event) => {
+    let input = search_input
+
     if(event.keyCode === 13) {
         fetchData()
+
+        input.value = ''
     }
 })
